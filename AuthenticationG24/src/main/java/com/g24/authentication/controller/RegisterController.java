@@ -77,7 +77,6 @@ public class RegisterController
 	}
 
 	@GetMapping("/confirm-registration")
-	@Transactional
 	public String confirmRegistrationPage(@RequestParam String token, Model model)
 	{	
 		try
@@ -92,6 +91,7 @@ public class RegisterController
 		catch (Exception ex )
 		{
 			model.addAttribute("error", "An unexpected error has occurred.");
+			return "confirm-registration";
 		}
 
 		return "redirect:/login?registerComplete";

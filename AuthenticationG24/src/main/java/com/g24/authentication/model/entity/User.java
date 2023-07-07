@@ -38,7 +38,6 @@ public class User
 	//@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_gen_user")
 	@SequenceGenerator(name = "seq_gen_user", sequenceName = "seq_user", initialValue = 99999999, allocationSize = 1)
-	
 	private Long id;
 	
 	@Column(nullable = false)

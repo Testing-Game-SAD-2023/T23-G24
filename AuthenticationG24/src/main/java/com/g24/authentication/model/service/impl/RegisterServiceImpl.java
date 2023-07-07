@@ -2,6 +2,7 @@ package com.g24.authentication.model.service.impl;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Arrays;
@@ -89,7 +90,7 @@ public class RegisterServiceImpl implements RegisterService
 
 		Map<String, Object> modelMail = new HashMap<>();
 		modelMail.put("token", token.getToken());
-		modelMail.put("user", user);
+		modelMail.put("user", user.getFirstName());
 
 		/*
 		 * String url = request.getScheme() + "://" + request.getServerName() + ":" +
@@ -97,27 +98,29 @@ public class RegisterServiceImpl implements RegisterService
 		 * "/confirm-registration?token=" + token.getToken()); mail.setModel(modelMail);
 		 */
 
-		emailService.sendEmail("Registration", user.getEmail(), modelMail);		
+		Mail mail = emailService.createEmail("Registration", user.getEmail(), modelMail);	
+		emailService.sendEmail(mail);
 	}
 
 	@Override
+	@Transactional
 	public void enableUser(String token) throws TokenException
 	{
 		Token resetToken = tokenRepository.findByToken(token);//findByToken(token);	
 
-		if (resetToken == null)
+		if (resetToken != null)
 		{
-			throw new TokenException("Could not find registration token.");
-		}
-		else 
-			if (!resetToken.getType().equals("Registration"))
+			if (resetToken.getType().equals("Registration"))
 			{
-				throw new TokenException("This token can't be used for registration.");
-			}
-			else {
 				tokenRepository.delete(resetToken);
 				userRepository.enable(resetToken.getUser().getId());
 			}
+			else {
+				throw new TokenException("This token can't be used for registration.");
+			}
+		}
+		else 
+			throw new TokenException("Could not find registration token.");
 	}
 
 	/*

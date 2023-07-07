@@ -28,11 +28,7 @@ public class PasswordResetServiceImpl implements PasswordResetService
     {
     	Token resetToken = tokenRepository.findByToken(token);
     	
-    	if(resetToken == null)
-    	{
-    		throw new TokenException("Could not find password reset token.");
-    	}
-    	else
+    	if(resetToken != null)
     	{
     		if (!resetToken.getType().equals("PasswordReset"))
     		{
@@ -45,6 +41,11 @@ public class PasswordResetServiceImpl implements PasswordResetService
 			else {
 				return resetToken.getToken();
 			}
+    		
+    	}
+    	else
+    	{
+    		throw new TokenException("Could not find password reset token.");
     	}
 		
     }
@@ -55,15 +56,14 @@ public class PasswordResetServiceImpl implements PasswordResetService
 		Token resetToken = tokenRepository.findByToken(token);
 		
 		User user = resetToken.getUser();
-	
-		String passwordEncrypt = passwordEncoder.encode(newPassword);
-
 
 		if (passwordEncoder.matches(newPassword, user.getPassword()))
 		{
 			throw new PasswordException("New password can't be equal to the old one");
 		}
 
+		String passwordEncrypt = passwordEncoder.encode(newPassword);
+		
 		userRepository.updatePassword(passwordEncrypt, user.getId());
 
 		tokenRepository.delete(resetToken);

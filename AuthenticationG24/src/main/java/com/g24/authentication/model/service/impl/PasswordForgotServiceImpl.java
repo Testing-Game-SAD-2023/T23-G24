@@ -74,7 +74,7 @@ public class PasswordForgotServiceImpl implements PasswordForgotService
 
 		Map<String, Object> modelMail = new HashMap<>();
 		modelMail.put("token", token.getToken());
-		modelMail.put("user", user);
+		modelMail.put("user", user.getFirstName());
 
 		/*
 		 * String url = request.getScheme() + "://" + request.getServerName() + ":" +
@@ -83,6 +83,7 @@ public class PasswordForgotServiceImpl implements PasswordForgotService
 		 */
 		//emailService.sendEmail(mail);
 
-		emailService.sendEmail("PasswordReset", user.getEmail(), modelMail);
+		Mail mail = emailService.createEmail("PasswordReset", user.getEmail(), modelMail);
+		emailService.sendEmail(mail);
 	}
 }

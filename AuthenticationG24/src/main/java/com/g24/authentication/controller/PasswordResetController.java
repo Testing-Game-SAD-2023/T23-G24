@@ -51,8 +51,10 @@ public class PasswordResetController
 
 	@PostMapping
 	
-	public String handlePasswordReset(@ModelAttribute("passwordResetForm") @Valid PasswordResetDto form, BindingResult result,Model model, RedirectAttributes redirectAttributes)
+	public String handlePasswordReset(@ModelAttribute("passwordResetForm") @Valid PasswordResetDto form, BindingResult result, RedirectAttributes redirectAttributes)
 	{	
+		boolean error = false;
+		
 		if(!form.getPassword().equals(form.getConfirmPassword())) 
 		{
 			result.rejectValue("confirmPassword", null,"The password fields must match");
@@ -70,12 +72,12 @@ public class PasswordResetController
 			}
 			catch (Exception ex )
 			{
-				model.addAttribute("error", "An unexpected error has occurred.");
+				error = true;
 				redirectAttributes.addFlashAttribute("error", "An unexpected error has occurred.");
 			}
 		}
 		
-		if (result.hasErrors()||model.containsAttribute("error"))
+		if (result.hasErrors()||error)
 		{
 			redirectAttributes.addFlashAttribute(BindingResult.class.getName() + ".passwordResetForm", result);
 			redirectAttributes.addFlashAttribute("passwordResetForm", form);
