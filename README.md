@@ -26,8 +26,8 @@ Requisiti sulla Registrazione ed Autenticazione dei Giocatori
 
 <h3> Installazione su Docker </h3>
 
-<p> Docker Desktop è un’applicazione che permette di istanziare ed eseguire dei container in un ambiente virtuale. </p>
-<p> Nel nostro caso abbiamo creato due container: 
+<p> Docker Desktop è un’applicazione che permette di istanziare ed eseguire dei container in un ambiente virtuale.
+Nel nostro caso abbiamo creato due container: 
 <lu>
   <li> Applicazione </li>
   <li> MySQL </li>
