@@ -21,4 +21,5 @@ Requisiti sulla Registrazione ed Autenticazione dei Giocatori
   <li> Lombok </li>
   <li> Tymeleaf </li>
   <li> Xampp </li>
+  <li> Docker </li>
 </lu>
