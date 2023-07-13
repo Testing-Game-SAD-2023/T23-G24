@@ -87,7 +87,7 @@ In particolare abbiamo settato i parametri di configurazione in due file: <br>
   </div>
     <br>
       Tramite il prompt dei comandi (eseguito in modalità amministratore), ci spostiamo nella directory contenente il progetto e i file docker.<br>
-Digitiamo il comando <em>>docker compose up</em ed automaticamente verranno generati ed eseguiti i container.<br>
+Digitiamo il comando <em>docker compose up</em> ed automaticamente verranno generati ed eseguiti i container.<br>
 Nel docker compose sono state inserite alcune variabili d’ambiente che servono a configurare la nostra applicazione, ovvero l’URL del database e il porto del server.<br>
 Inoltre non è possibile utilizzare Maven Install per la creazione del .jar  in quanto esso effettua dei test sul database che non è stato ancora generato.<br>
       <div align="center">
