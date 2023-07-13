@@ -36,8 +36,9 @@ Per quanto riguarda l’installazione in locale del software, l’applicazione v
 Per quanto riguarda la <em><b>compatibilità</b></em>, il software richiede un sistema sul quale è installata la versione di Java 17 (o superiore) e un database relazionale MySQL. <br>
 E’ necessario scaricare la libreria <em>lombok</em> per la creazione automatica dei getter/setter e dei costruttori (con e senza argomenti). <br>
 In particolare, attraverso il file di configurazione denominato <em>application.properties</em> (situato nella stessa cartella in cui si trova il file .jar) è possibile configurare opportunamente diversi parametri tra cui: il mail server, l’URL del database e la connessione a quest’ultimo. <br> Inoltre, è possibile modificare i porti di accesso e uscita dell’applicazione.
+<br>
 
-<img src="HTMLImages/ApplicationProperties.png" alt="application.proerties" width="500" height="300">
+<center> <img src="HTMLImages/ApplicationProperties.png" alt="application.proerties" width="500" height="300"></center>
 
 
 
