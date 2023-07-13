@@ -45,7 +45,7 @@ In particolare, attraverso il file di configurazione denominato <em>application.
 Per importare il Progetto Maven nell’IDE Eclipse: <br>
 <div align="center">
   <p>File -> Import -> Existing Project into Workspace -> root directory. </p> 
-</div> <br>
+</div>
 Cliccando su finish, il Progetto verrà importato nel workspace. <br>
 A questo punto cliccando con il tasto destro sul pom.xml: <br>
 <div align="center">
