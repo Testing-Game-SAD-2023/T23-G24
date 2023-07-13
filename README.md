@@ -38,10 +38,17 @@ E’ necessario scaricare la libreria <em>lombok</em> per la creazione automatic
 In particolare, attraverso il file di configurazione denominato <em>application.properties</em> (situato nella stessa cartella in cui si trova il file .jar) è possibile configurare opportunamente diversi parametri tra cui: il mail server, l’URL del database e la connessione a quest’ultimo. <br> Inoltre, è possibile modificare i porti di accesso e uscita dell’applicazione.
 <br>
 <br>
-<br>
 <div style="text-align:center;">
   <img src="HTMLImages/ApplicationProperties.png" alt="application.proerties" width="500" height="400">
 </div>
+<br>
+<br>
+Per importare il Progetto Maven nell’IDE Eclipse: <br>
+<center> File -> Import -> Existing Project into Workspace -> root directory. </center> <br>
+Cliccando su finish, il Progetto verrà importato nel workspace. <br>
+A questo punto cliccando con il tasto destro sul pom.xml: <br>
+<center> run as -> maven install</center> <br>
+
 
 
 
