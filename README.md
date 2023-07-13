@@ -81,8 +81,8 @@ In particolare abbiamo settato i parametri di configurazione in due file: <br>
   <br>
   <li><b>Docker-compose.yml:</b>
     <br>
-  <br>
    Gestisce la configurazione dei due container e la loro interazione. <br>
+      <br>
   <div align="center">
     <img src="HTMLImages/DockerCompose.png" alt="Docker Compose" width="400" height="300">
   </div>
