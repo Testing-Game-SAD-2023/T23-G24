@@ -68,6 +68,16 @@ Dopo aver cliccato sul progetto (“AuthenticationG24”), possiamo avviare l’
 Docker Desktop è un’applicazione che permette di istanziare ed eseguire dei <em>container</em> in un ambiente virtuale. <br>
 Nel nostro caso abbiamo creato due container: il primo contiene l’applicazione, l’altro il database MySQL. <br>
 In particolare abbiamo settato i parametri di configurazione in due file: <br>
+<ul>
+  <li><b>Dockerfile:</b></li>
+  <div align="center">
+    <img src="HTMLImages/Docker.png" alt="Spring Tool 4" width="500" height="300">
+    <em>FROM</em>: impostare l’ambiente di esecuzione;
+    <em>ARG JAR_FILE</em>: specificare il percorso e il file eseguibile dell’applicazione;
+    <em>COPY JAR_FILE</em>: specificare il file eseguibile per il docker;
+    <em>ENTRYPOINT</em>: comando e parametri del comando per eseguire il programma specificato nel COPY .
+  </div>
+</ul>
 
 
 
