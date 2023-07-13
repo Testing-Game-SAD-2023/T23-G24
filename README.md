@@ -56,11 +56,11 @@ Con il comando <em>Maven install</em> viene automaticamente generata la cartella
 Prima di far partire l’esecuzione in locale dell’applicazione è necessario avviare il database, utilizzando XAMPP. <br>
 Per l’esecuzione in locale viene avviata la Boot Dashboard di Spring (grazie al tool Spring Tool Suite 4): <br>
 <div align="center">
-  <img src="HTMLImages/SpringTool4.png" alt="Spring Tool 4" width="500" height="400">
+  <img src="HTMLImages/SpringTool4.png" alt="Spring Tool 4" width="500" height="100">
 </div>
 Dopo aver cliccato sul progetto (“AuthenticationG24”), possiamo avviare l’esecuzione dell’applicazione tramite il pulsante cerchiato in rosso.
 <div align="center">
-  <img src="HTMLImages/AvvioApplicazione.png" alt="Bottone per avvio applicazione" width="500" height="400">
+  <img src="HTMLImages/AvvioApplicazione.png" alt="Bottone per avvio applicazione" width="500" height="100">
 </div>
 
 
