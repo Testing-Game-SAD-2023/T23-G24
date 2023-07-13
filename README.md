@@ -82,7 +82,7 @@ In particolare abbiamo settato i parametri di configurazione in due file: <br>
   <br>
    Gestisce la configurazione dei due container e la loro interazione. <br>
   <div align="center">
-    <img src="HTMLImages/DockerCompose.png" alt="Docker Compose" width="300" height="100">
+    <img src="HTMLImages/DockerCompose.png" alt="Docker Compose" width="500" height="400">
   </div>
       Tramite il prompt dei comandi (eseguito in modalità amministratore), ci spostiamo nella directory contenente il progetto e i file docker.<br>
 Digitiamo il comando <em>>docker compose up</em ed automaticamente verranno generati ed eseguiti i container.<br>
