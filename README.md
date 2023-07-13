@@ -69,14 +69,15 @@ Docker Desktop è un’applicazione che permette di istanziare ed eseguire dei <
 Nel nostro caso abbiamo creato due container: il primo contiene l’applicazione, l’altro il database MySQL. <br>
 In particolare abbiamo settato i parametri di configurazione in due file: <br>
 <ul>
-  <li><b>Dockerfile:</b></li>
+  <li><b>Dockerfile:</b>
   <div align="center">
     <img src="HTMLImages/Docker.png" alt="Spring Tool 4" width="200" height="100">
-    <em>FROM</em>: impostare l’ambiente di esecuzione;<br>
+  </div>
+      <em>FROM</em>: impostare l’ambiente di esecuzione;<br>
     <em>ARG JAR_FILE</em>: specificare il percorso e il file eseguibile dell’applicazione;<br>
     <em>COPY JAR_FILE</em>: specificare il file eseguibile per il docker;<br>
     <em>ENTRYPOINT</em>: comando e parametri del comando per eseguire il programma specificato nel COPY.<br>
-  </div>
+  </li>
 </ul>
 
 
