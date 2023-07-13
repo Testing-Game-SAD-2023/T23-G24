@@ -71,7 +71,7 @@ In particolare abbiamo settato i parametri di configurazione in due file: <br>
 <ul>
   <li><b>Dockerfile:</b>
   <div align="center">
-    <img src="HTMLImages/Docker.png" alt="Spring Tool 4" width="200" height="100">
+    <img src="HTMLImages/Docker.png" alt="Spring Tool 4" width="300" height="100">
   </div>
       <em>FROM</em>: impostare l’ambiente di esecuzione;<br>
     <em>ARG JAR_FILE</em>: specificare il percorso e il file eseguibile dell’applicazione;<br>
