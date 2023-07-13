@@ -28,7 +28,7 @@ Requisiti sulla Registrazione ed Autenticazione dei Giocatori
   <li> <b>Diagramma UML</b>: Visual Paradigm Community Edition; </li>
   <li> <b>Account Email</b>: Google; </li>
   <li> <b>Container</b>: Docker; </li>
-  <li> <b> Strumento di Testing</b>: Postman v10.15 </li>
+  <li> <b> Strumento di Testing</b>: Postman v10.15. </li>
 </ul>
 
 <h2>Installazione</h2>
