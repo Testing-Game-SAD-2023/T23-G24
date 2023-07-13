@@ -58,7 +58,7 @@ Per l’esecuzione in locale viene avviata la Boot Dashboard di Spring (grazie a
 <div align="center">
   <img src="HTMLImages/SpringTool4.png" alt="Spring Tool 4" width="500" height="50">
 </div>
-Dopo aver cliccato sul progetto (“AuthenticationG24”), possiamo avviare l’esecuzione dell’applicazione tramite il pulsante cerchiato in rosso.
+Dopo aver cliccato sul progetto (“AuthenticationG24”), possiamo avviare l’esecuzione dell’applicazione tramite il pulsante cerchiato in rosso. <br>
 <div align="center">
   <img src="HTMLImages/AvvioApplicazione.png" alt="Bottone per avvio applicazione" width="500" height="50">
 </div>
