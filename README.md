@@ -59,9 +59,16 @@ Per l’esecuzione in locale viene avviata la Boot Dashboard di Spring (grazie a
   <img src="HTMLImages/SpringTool4.png" alt="Spring Tool 4" width="500" height="50">
 </div>
 Dopo aver cliccato sul progetto (“AuthenticationG24”), possiamo avviare l’esecuzione dell’applicazione tramite il pulsante cerchiato in rosso. <br>
+<br>
 <div align="center">
   <img src="HTMLImages/AvvioApplicazione.png" alt="Bottone per avvio applicazione" width="500" height="50">
 </div>
+
+<h3>Esecuzione con Docker Desktop </h3>
+Docker Desktop è un’applicazione che permette di istanziare ed eseguire dei <em>container</em> in un ambiente virtuale. <br>
+Nel nostro caso abbiamo creato due container: il primo contiene l’applicazione, l’altro il database MySQL. <br>
+In particolare abbiamo settato i parametri di configurazione in due file: <br>
+
 
 
 
