@@ -71,12 +71,27 @@ In particolare abbiamo settato i parametri di configurazione in due file: <br>
 <ul>
   <li><b>Dockerfile:</b>
   <div align="center">
-    <img src="HTMLImages/Docker.png" alt="Spring Tool 4" width="300" height="100">
+    <img src="HTMLImages/Docker.png" alt="Docker" width="300" height="100">
   </div>
       <em>FROM</em>: impostare l’ambiente di esecuzione;<br>
     <em>ARG JAR_FILE</em>: specificare il percorso e il file eseguibile dell’applicazione;<br>
     <em>COPY JAR_FILE</em>: specificare il file eseguibile per il docker;<br>
     <em>ENTRYPOINT</em>: comando e parametri del comando per eseguire il programma specificato nel COPY.<br>
+  </li>
+  <li><b>Docker-compose.yml:</b>
+  <br>
+   Gestisce la configurazione dei due container e la loro interazione. <br>
+  <div align="center">
+    <img src="HTMLImages/DockerCompose.png" alt="Docker Compose" width="300" height="100">
+  </div>
+      Tramite il prompt dei comandi (eseguito in modalità amministratore), ci spostiamo nella directory contenente il progetto e i file docker.<br>
+Digitiamo il comando <em>>docker compose up</em ed automaticamente verranno generati ed eseguiti i container.<br>
+Nel docker compose sono state inserite alcune variabili d’ambiente che servono a configurare la nostra applicazione, ovvero l’URL del database e il porto del server.<br>
+Inoltre non è possibile utilizzare Maven Install per la creazione del .jar  in quanto esso effettua dei test sul database che non è stato ancora generato.<br>
+      <div align="center">
+    <img src="HTMLImages/MavenBuild.png" alt="Spring Tool 4" width="500" height="300">
+  </div>
+    Si può utilizzare Maven <em>build</em> impostando come goal “install” e selezionando l’opzione <em>Skip test</em>.
   </li>
 </ul>
 
