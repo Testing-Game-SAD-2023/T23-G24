@@ -80,6 +80,7 @@ In particolare abbiamo settato i parametri di configurazione in due file: <br>
   </li>
   <br>
   <li><b>Docker-compose.yml:</b>
+    <br>
   <br>
    Gestisce la configurazione dei due container e la loro interazione. <br>
   <div align="center">
@@ -90,6 +91,7 @@ In particolare abbiamo settato i parametri di configurazione in due file: <br>
 Digitiamo il comando <em>docker compose up</em> ed automaticamente verranno generati ed eseguiti i container.<br>
 Nel docker compose sono state inserite alcune variabili d’ambiente che servono a configurare la nostra applicazione, ovvero l’URL del database e il porto del server.<br>
 Inoltre non è possibile utilizzare Maven Install per la creazione del .jar  in quanto esso effettua dei test sul database che non è stato ancora generato.<br>
+    <br>
       <div align="center">
     <img src="HTMLImages/MavenBuild.png" alt="Spring Tool 4" width="500" height="300">
   </div>
