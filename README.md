@@ -7,10 +7,10 @@ Requisiti sulla Registrazione ed Autenticazione dei Giocatori
 
 <h3> Storie utente </h3>
 <ol> 
-  <li> Come utente non registrato, voglio accedere alla pagina di registrazione dell’applicazione, in modo da potermi registrare.</li>
-  <li> Come utente registrato, voglio accedere alla pagina di autenticazione dell’applicazione, in modo da potermi autenticare.</li>
-  <li> Come utente registrato, voglio accedere alla pagina di password dimenticata dell’applicazione, in modo da poter recuperare l’account.</li>
-  <li> Come admin, voglio accedere alla pagina di gestione utenti, in modo da poter visualizzare l’elenco degli utenti registrati. </li>
+  <li> <b>Come</b> utente non registrato, <b>voglio</b> accedere alla pagina di registrazione dell’applicazione, <b>in modo da</b> potermi registrare.</li>
+  <li> <b>Come</b> utente registrato, <b>voglio</b> accedere alla pagina di autenticazione dell’applicazione, <b>in modo da</b> potermi autenticare.</li>
+  <li> <b>Come</b> utente registrato, <b>voglio</b> accedere alla pagina di password dimenticata dell’applicazione, <b>in modo da</b> poter recuperare l’account.</li>
+  <li> <b>Come</b> admin, <b>voglio</b> accedere alla pagina di gestione utenti, <b>in modo da</b> poter visualizzare l’elenco degli utenti registrati. </li>
 </ol>
 
 <h2> Tool e tecnologie utilizzate per lo sviluppo </h2>
