@@ -78,12 +78,14 @@ In particolare abbiamo settato i parametri di configurazione in due file: <br>
     <em>COPY JAR_FILE</em>: specificare il file eseguibile per il docker;<br>
     <em>ENTRYPOINT</em>: comando e parametri del comando per eseguire il programma specificato nel COPY.<br>
   </li>
+  <br>
   <li><b>Docker-compose.yml:</b>
   <br>
    Gestisce la configurazione dei due container e la loro interazione. <br>
   <div align="center">
-    <img src="HTMLImages/DockerCompose.png" alt="Docker Compose" width="500" height="400">
+    <img src="HTMLImages/DockerCompose.png" alt="Docker Compose" width="400" height="300">
   </div>
+    <br>
       Tramite il prompt dei comandi (eseguito in modalità amministratore), ci spostiamo nella directory contenente il progetto e i file docker.<br>
 Digitiamo il comando <em>>docker compose up</em ed automaticamente verranno generati ed eseguiti i container.<br>
 Nel docker compose sono state inserite alcune variabili d’ambiente che servono a configurare la nostra applicazione, ovvero l’URL del database e il porto del server.<br>
