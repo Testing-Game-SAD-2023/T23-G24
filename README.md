@@ -37,8 +37,9 @@ Per quanto riguarda la <em><b>compatibilità</b></em>, il software richiede un s
 E’ necessario scaricare la libreria <em>lombok</em> per la creazione automatica dei getter/setter e dei costruttori (con e senza argomenti). <br>
 In particolare, attraverso il file di configurazione denominato <em>application.properties</em> (situato nella stessa cartella in cui si trova il file .jar) è possibile configurare opportunamente diversi parametri tra cui: il mail server, l’URL del database e la connessione a quest’ultimo. <br> Inoltre, è possibile modificare i porti di accesso e uscita dell’applicazione.
 <br>
-
-<center> <img src="HTMLImages/ApplicationProperties.png" alt="application.proerties" width="500" height="300"></center>
+<div style="text-align:center;">
+  <img src="HTMLImages/ApplicationProperties.png" alt="application.proerties">
+</div>
 
 
 
