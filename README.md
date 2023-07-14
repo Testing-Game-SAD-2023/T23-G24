@@ -2,7 +2,6 @@
 Requisiti sulla Registrazione ed Autenticazione dei Giocatori
 
 <img src="HTMLImages/SwaggerIcons.png" alt="Swagger Icons" width="50" height="50" href="https://app.swaggerhub.com/apis-docs/PPORCELLINI/ApplicationG24Api/1.0.0">
-<b>API</b> documentate <a href="https://app.swaggerhub.com/apis-docs/PPORCELLINI/ApplicationG24Api/1.0.0">qui</a>.
 
 <h2> Requisiti </h2>
 <b>T2</b>: L’applicazione deve consentire agli studenti di registrarsi per poter conservare la storia delle attività svolte, oppure per accedere a requisiti di gioco più complessi. All’atto della registrazione, lo studente fornirà nome, cognome, un indirizzo e-mail valido ed una password, il sistema dopo aver controllato la validità dei dati forniti, aggiungerà il giocatore all’elenco dei giocatori registrati e gli assocerà un Id univoco. Sarebbe desiderabile raccogliere anche altre informazioni sugli studenti, come il corso di studi a cui sono iscritti (Bachelor, Master Degree, o altro). <br>
