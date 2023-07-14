@@ -1,6 +1,7 @@
 # T23-G24
 Requisiti sulla Registrazione ed Autenticazione dei Giocatori
 
+<img src="HTMLImages/Swagger.png" alt="Docker Compose" width="400" height="300">
 <b>API</b> documentate <a href="https://app.swaggerhub.com/apis-docs/PPORCELLINI/ApplicationG24Api/1.0.0">qui</a>.
 
 <h2> Requisiti </h2>
