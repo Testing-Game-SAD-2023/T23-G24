@@ -1,5 +1,7 @@
 # T23-G24
 Requisiti sulla Registrazione ed Autenticazione dei Giocatori
+
+<br>
 <a href="https://app.swaggerhub.com/apisdocs/PPORCELLINI/ApplicationG24Api/1.0.0">
   <img src="HTMLImages/SwaggerIcons.png" alt="Swagger Icons" width="50" height="50" >
 </a>
